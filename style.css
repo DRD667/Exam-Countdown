@@ -1,3 +1,4 @@
+
 *{
   margin:0;
   padding:0;
@@ -23,6 +24,7 @@ body{
   background: url(https://images.immediate.co.uk/production/volatile/sites/7/2019/08/GETTY-464442413-170e212.jpg?quality=90&resize=768,574);
   background-size:cover;
   opacity:0.1;
+  animation:wave 10s linear infinite alternate;
   background-position: center;
 }
 
@@ -48,13 +50,13 @@ body{
 
 @keyframes wave{
   to{
-    transform:translateY(5%) rotate(1deg);
+    transform:translateY(1rem) rotate(1deg);
   }
 }
 
 #date{
   position:fixed;
   top:1rem;
-  right:1rem;
+  right:1.2rem;
   font-size:3vmin;
 }
