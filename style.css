@@ -69,3 +69,8 @@ a{
   color:white;
   filter:drop-shadow(0 0 5px black);
 }
+
+@screen (min-width:900px){
+  body{
+    overflow:hidden;}
+}
