@@ -22,6 +22,7 @@ a{
   left:1rem;
   font-size:2em;
   color:white;
+  filter:drop-shadow(0 0 5px black);
 }
 
 #bg{
