@@ -32,7 +32,7 @@ a {
   background: url(https://i.guim.co.uk/img/media/f5e1dcf76a26b9dd599b8c8a563a04231b673fb0/0_48_6892_4137/master/6892.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=7bdf316330d3598cac5abc2c03ca01b6);
   background-size: cover;
   opacity: 0.3;
-  animation: wave2 10s ease-in-out infinite alternate;
+  animation: wave2 30s ease-in-out infinite alternate;
   background-position: center;
 }
 
