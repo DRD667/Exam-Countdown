@@ -10,7 +10,7 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: linear-gradient(to right bottom, purple, violet, white);
+  background: linear-gradient(to right, purple, violet);
   color: white;
   background-color: #a4508b;
   overflow: hidden;
