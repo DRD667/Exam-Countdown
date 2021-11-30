@@ -47,10 +47,10 @@ a {
 #subject {
   position: absolute;
   color: black;
-  top: 25vmin;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -10%);
-  opacity: 0.5;
+  transform: translate(-50%, -35%);
+  opacity: 0.7;
   font-size: 25vmin;
   z-index: -1;
   border-radius: 20px;
