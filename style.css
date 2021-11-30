@@ -1,77 +1,70 @@
-
-*{
-  margin:0;
-  padding:0;
-  font-family:Verdana;
-  max-width:100%;
-  max-height:100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-body{
-  display:grid;
-  place-content:center;
-  height:100vh;
-  background:linear-gradient(to right,brown,red);
-  color:white;
-  padding:2rem;
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: linear-gradient(to right bottom, purple, violet, white);
+  color: white;
+  background-color: #a4508b;
+  overflow: hidden;
+  padding: 2rem;
 }
 
+a {
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 2em;
+  color: white;
+}
 
-#bg{
-  position:fixed;
-  inset:0;
-  z-index:-1;
-  background: url(https://images.immediate.co.uk/production/volatile/sites/7/2019/08/GETTY-464442413-170e212.jpg?quality=90&resize=768,574);
-  background-size:cover;
-  opacity:0.1;
-  animation:wave 10s linear infinite alternate;
+#bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url(https://i.guim.co.uk/img/media/f5e1dcf76a26b9dd599b8c8a563a04231b673fb0/0_48_6892_4137/master/6892.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=7bdf316330d3598cac5abc2c03ca01b6);
+  background-size: cover;
+  opacity: 0.3;
+  animation: wave 10s linear infinite alternate;
   background-position: center;
 }
 
-#timer{
-  font-size:15vmin;
-  text-align:center;
-  z-index:2;
-  filter:drop-shadow(3px 3px 2px red);
-  animation:wave 3s infinite alternate;
+#timer {
+  font-size: 15vmin;
+  text-align: center;
+  z-index: 2;
+  filter: drop-shadow(3px 3px 2px violet);
+  animation: wave 3s infinite alternate;
 }
 
-#subject{
-  position:absolute;
-  color:black;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  opacity:0.5;
-  font-size:50vmin;
-  z-index:-1;
-  border-radius:20px;
+#subject {
+  position: absolute;
+  color: black;
+  top: 25vmin;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  opacity: 0.5;
+  font-size: 25vmin;
+  z-index: -1;
+  border-radius: 20px;
 }
 
-@keyframes wave{
-  to{
-    transform:translateY(1rem) rotate(1deg);
+@keyframes wave {
+  to {
+    transform: translateY(1rem) rotate(1deg);
   }
 }
 
-#date{
-  position:fixed;
-  top:1rem;
-  right:1.2rem;
-  font-size:3vmin;
-}
-
-a{
-  position:fixed;
-  top:0.5rem;
-  left:1rem;
-  font-size:2em;
-  color:white;
-  filter:drop-shadow(0 0 5px black);
-}
-
-
-@media (min-width:900px) {
-  body{
-  overflow:hidden;}
+#date {
+  position: fixed;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 3vmin;
 }
