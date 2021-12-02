@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 2, 2021 09:00:00").getTime();
+var countDownDate = new Date("Dec 4, 2021 23:00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
@@ -19,4 +19,4 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-let sub = (document.getElementById("subject").innerText = "Science");
+let sub = (document.getElementById("subject").innerText = "Maths");
