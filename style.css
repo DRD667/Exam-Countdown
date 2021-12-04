@@ -50,8 +50,7 @@ a.syl {
 
 #banner {
   position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 1.5em;
   height: 1em;
   left: 0;
   right: 0;
@@ -60,15 +59,7 @@ a.syl {
 }
 
 #banner a {
-  color: white;
-}
-
-#banner:hover {
-  filter: drop-shadow(0 0 0 black);
-}
-
-#banner a:hover {
-  color: yellow;
+  font-size: 2em;
 }
 
 #subject {
