@@ -10,14 +10,14 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: linear-gradient(to right, purple, violet);
+  background: linear-gradient(to right, yellow, violet);
   color: white;
   background-color: #a4508b;
   overflow: hidden;
   padding: 2rem;
 }
 
-a {
+a.syl {
   position: fixed;
   top: 0.5rem;
   left: 1rem;
@@ -28,20 +28,47 @@ a {
 #bg {
   position: fixed;
   inset: 0;
-  z-index: -1;
-  background: url(https://i.guim.co.uk/img/media/f5e1dcf76a26b9dd599b8c8a563a04231b673fb0/0_48_6892_4137/master/6892.jpg?width=465&quality=45&auto=format&fit=max&dpr=2&s=7bdf316330d3598cac5abc2c03ca01b6);
+  z-index: -2;
+  opacity: 0.2;
+  background: url(https://t3.ftcdn.net/jpg/03/70/69/30/360_F_370693015_KQJzbGL0RFlV8v5Mg2AmnozboTh1MOpX.jpg);
   background-size: cover;
-  opacity: 0.3;
-  animation: wave2 30s ease-in-out infinite alternate;
+  animation: wave2 40s ease-in-out infinite alternate;
   background-position: center;
+  filter: blur(1px);
 }
 
 #timer {
   font-size: 15vmin;
   text-align: center;
   z-index: 2;
+  position: relative;
+  top: 1.5em;
   filter: drop-shadow(3px 3px 2px violet);
+  /*   background:black; */
   animation: wave 3s infinite alternate;
+}
+
+#banner {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 1em;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  text-align: right;
+}
+
+#banner a {
+  color: white;
+}
+
+#banner:hover {
+  filter: drop-shadow(0 0 0 black);
+}
+
+#banner a:hover {
+  color: yellow;
 }
 
 #subject {
@@ -50,10 +77,14 @@ a {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -35%);
-  opacity: 0.7;
-  font-size: 25vmin;
+  /*   opacity: 0.7; */
+  font-size: 23vmin;
   z-index: -1;
   border-radius: 20px;
+  background: rgba(255, 255, 255, 1);
+  outline: black 5px solid;
+  padding: 1.5rem;
+  color: black;
 }
 
 @keyframes wave {
